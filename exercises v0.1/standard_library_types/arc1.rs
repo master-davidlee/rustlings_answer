@@ -5,14 +5,14 @@
 // Execute `rustlings hint arc1` for hints :)
 
 
+
 #![forbid(unused_imports)] // Do not change this, (or the next) line.
 use std::sync::Arc;
 use std::thread;
 
 fn main() {
     let numbers: Vec<_> = (0..100u32).collect();
-    let shared_numbers = Arc::new(vec![1,2,3,4,5]);
-    
+    let shared_numbers = Arc::new(numbers);
     let mut joinhandles = Vec::new();
 
     for offset in 0..8 {
@@ -22,7 +22,7 @@ fn main() {
             let mut sum = 0;
             while i < child_numbers.len() {
                 sum += child_numbers[i];
-                i += 5;
+                i += 8;
             }
             println!("Sum of offset {} is {}", offset, sum);
         }));

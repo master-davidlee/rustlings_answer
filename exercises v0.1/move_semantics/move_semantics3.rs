@@ -4,7 +4,6 @@
 // Execute `rustlings hint move_semantics3` for hints :)
 
 
-
 fn main() {
     let vec0 = Vec::new();
 

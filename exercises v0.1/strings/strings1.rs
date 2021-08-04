@@ -3,11 +3,12 @@
 // Execute `rustlings hint strings1` for hints ;)
 
 
+
 fn main() {
     let answer = current_favorite_color();
     println!("My current favorite color is {}", answer);
 }
 
 fn current_favorite_color() -> String {
-    "blue".to_owned()
+    "blue".to_string()
 }

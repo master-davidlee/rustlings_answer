@@ -8,7 +8,6 @@
 // No hints, you can do this :)
 
 
-
 pub fn times_two(num: i32) -> i32 {
     num * 2
 }
@@ -25,6 +24,6 @@ mod tests {
     #[test]
     fn returns_twice_of_negative_numbers() {
         // TODO write an assert for `times_two(-4)`
-        assert_eq!(times_two(-4), -8)
+        assert_eq!(times_two(-4), -8);
     }
 }

@@ -11,6 +11,7 @@ struct Person {
 }
 
 
+// Steps:
 // 1. If the length of the provided string is 0, then return an error
 // 2. Split the given string on the commas present in it
 // 3. Extract the first element from the split operation and use it as the name
@@ -39,6 +40,7 @@ impl FromStr for Person {
             return Err(String::from("age must be number"));
         }
     }
+    
 }
 
 fn main() {
@@ -97,5 +99,4 @@ mod tests {
     fn missing_name_and_invalid_age() {
         ",one".parse::<Person>().unwrap();
     }
-
 }

@@ -4,7 +4,7 @@
 
 
 fn main() {
-    let x=10;
+    let x:u32 = 0;
     if x == 10 {
         println!("Ten!");
     } else {

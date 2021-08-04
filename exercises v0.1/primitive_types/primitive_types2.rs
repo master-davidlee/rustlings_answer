@@ -3,6 +3,7 @@
 // No hints, there's no tricks, just get used to typing these :)
 
 
+
 fn main() {
     // Characters (`char`)
 
@@ -15,7 +16,7 @@ fn main() {
         println!("Neither alphabetic nor numeric!");
     }
 
-    let your_character = 'A'; 
+    let your_character = '9';
     // Finish this line like the example! What's your favorite character?
     // Try a letter, try a number, try a special character, try a character
     // from a different language than your own, try an emoji!
