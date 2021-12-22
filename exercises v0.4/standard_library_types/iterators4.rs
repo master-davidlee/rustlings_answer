@@ -12,10 +12,9 @@ pub fn factorial(num: u64) -> u64 {
     // For an extra challenge, don't use:
     // - recursion
     // Execute `rustlings hint iterators4` for hints.
-    if num == 1{1}
-    else{
-        num*factorial(num-1)
-    }
+    (1..num+1)
+        .into_iter()
+        .fold(1,|a,b| a * b)
 }
 
 #[cfg(test)]
